@@ -1,0 +1,99 @@
+
+:root{
+    --text-color:#7D83E1;
+    --heading-text-color:#5860CF;
+    --white:#ffffff;
+    --gray: #EFEFEF;
+}
+
+
+.headersec {
+
+    height: 100px;
+    background:var(--heading-text-color)
+    ;
+}
+
+.headingmain {
+   color:var(--white);
+    text-align: center;
+}
+
+
+.bodysec {
+    background:var(--gray);
+    height: 600px;
+}
+
+.questionmain {
+    height: 90vh;
+}
+
+.presantage {
+    height: 400px;
+    background:var(--white);
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.name {
+    height: 100px;
+    background:var(--white);
+    border-radius: 20px;
+}
+
+.textmaincolor{
+    color:var(--heading-text-color);
+}
+
+
+.textcolor{
+    color:var(--text-color);
+}
+
+.grade {
+    height: 274px;
+    background:var(--white);
+    border-radius: 20px;
+}
+
+
+.detailsmain{
+    height: 100px;
+}
+
+
+  
+  .presantagemain[role="progressbar"] {
+    --size: 12rem;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--heading-text-color) calc(var(--pgPercentage) * 1%), var(--gray) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--heading-text-color);
+  }
+  
+  .presantagemain[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+  }
+
+
+  
+  
+
+
+
+
+
+

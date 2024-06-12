@@ -1,0 +1,120 @@
+:root{
+    --primary-color:#5860CF;
+    --secondary-color:#ffffff;
+    --body-color: #EFEFEF;
+    --clock-hands:#000000;
+}
+
+
+.headersec {
+
+    height: 100px;
+    background:var(--primary-color)
+    ;
+}
+
+.headingmain {
+    color:var(--secondary-color);
+    text-align: center;
+}
+
+
+.bodysec {
+    background:var(--body-color);
+    height: 600px;
+}
+
+.questionmain {
+    height: 90vh;
+}
+
+.questionpage {
+    height: 450px;
+    background:var(--secondary-color);
+    border-radius: 20px;
+}
+
+
+
+.option {
+    width: 10px !important;
+    height: 25px !important;
+    border: #5860CF 1px solid;
+    border-radius: 70px;
+}
+
+
+.clock {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/clock.png");
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border-radius: 60px;
+    background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background:var(--clock-hands);
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 3px;
+    height: 40px;
+    left: 48px;
+    top: 9px;
+}
+
+#minute {
+    width: 2px;
+    height: 46px;
+    left: 48px;
+    top: 3px;
+}
+
+#second {
+    width: 1px;
+    height: 45px;
+    left: 49px;
+    top: 4px;
+
+}
+
+.buttonnext {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: auto;
+}
+
+.nextbutton {
+
+    background:var(--primary-color) !important;
+}
+
+
+
+@media screen and (max-width:800px){ 
+
+  .clock{right: 12px;}
+
+    
+}
+
+
+
+@media screen and (max-width:700px){ 
+
+    .clock{right: -1px;}
+  
+      
+  }
+
+
+    
